@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework#3</title>
+    <title>Homework#5</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +51,7 @@
           <h1 class="title-hero">
             Effective Solutions <br />for Your Business
           </h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!--Hero section-->
@@ -295,38 +295,52 @@
             </li>
           </ul>
         </div>
-        <div class="customer">
+        <section class="customers">
+        <div class="container">
           <h3 class="client-banner">Customers</h3>
-          <a class="client-icons">
-            <svg width="168px" height="88px" class="icon icon-logo">
+           <ul class="customers-list list">
+            <li class="customers-item">
+          <a href="" class="client-icons">
+            <svg width="104px" height="56px" class="icon icon-logo">
               <use xlink:href="./images/icons.svg#icon-logo-4"></use>
             </svg>
           </a>
-          <a class="client-icons">
+          </li>
+          <li class="customers-item">
+          <a href="" class="client-icons">
             <svg width="168px" height="88px" class="icon icon-logo-1">
               <use xlink:href="./images/icons.svg#icon-logo-3"></use>
             </svg>
           </a>
-          <a class="client-icons">
+          </li>
+          <li class="customers-item">
+          <a href="" class="client-icons">
             <svg width="168px" height="88px" class="icon icon-logo-2">
               <use xlink:href="./images/icons.svg#icon-logo-2"></use>
             </svg>
           </a>
-          <a class="client-icons">
+          </li>
+          <li class="customers-item">
+          <a href="" class="client-icons">
             <svg width="168px" height="88px" class="icon icon-logo-3">
               <use xlink:href="./images/icons.svg#icon-client-4"></use>
             </svg>
           </a>
-          <a class="client-icons">
+          </li>
+          <li class="customers-item">
+          <a href="" class="client-icons">
             <svg width="168px" height="88px" class="icon icon-client-4">
               <use xlink:href="./images/icons.svg#icon-logo-1"></use>
             </svg>
           </a>
-          <a class="client-icons">
+          </li>
+          <li class="customers-item">
+          <a href="" class="client-icons">
             <svg width="168px" height="88px" class="icon icon-logo-4">
               <use xlink:href="./images/icons.svg#icon-logo"></use>
             </svg>
           </a>
+          </li>
         </div>
       </section>
     </main>
@@ -334,18 +348,116 @@
     <!-- Body ends here -->
     <!-- Footers starts here  -->
     <footer class="footer-page">
-      <div class="container"></div>
+      <div class="footer-container container">
+        <div class="footer-logo-wrapper">
 
       <a href="index.html" class="logo footer-link link"
         >WEB<span class="footer-logo">STUDIO</span></a
       >
-      <p class="footer">
+      <p class="footer-text">
         Increase the flow of customers and <br />
         sales for your business with digital<br />
         marketing & growth solutions. <br />
       </p>
-    </footer>
-    <!--Footer ends here -->
+      </div>
+    
+
+     <div class="footer-icon-wrapper">
+          <p class="footer-icon-text">Social media</p>
+          <ul class="footer-icon-list">
+            <li class="footer-icon-item">
+              <a href="" class="footer-icon-link">
+                <svg
+                  class="footer-icon"
+                  aria-label="icon-instagram"
+                  width="24"
+                  height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon-item">
+              <a href="" class="footer-icon-link">
+                <svg
+                  class="footer-icon"
+                  aria-label="icon-twitter"
+                  width="24"
+                  height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon-item">
+              <a href="" class="footer-icon-link">
+                <svg
+                  class="footer-icon"
+                  aria-label="icon-facebook"
+                  width="24"
+                  height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon-item">
+              <a href="" class="footer-icon-link">
+                <svg
+                  class="footer-icon"
+                  aria-label="icon-linkedin"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe-wrapper">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label">
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                name="email-field"
+                placeholder="E-mail"/>
+            </label>
+            <button
+              type="submit"
+              name="email-subscribe-button"
+              class="footer-subscribe-button">
+              Subscribe
+              <svg
+                class="footer-subscribe-icon"
+                aria-label="icon-send"
+                width="24"
+                height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+</footer>
+    
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button-close" type="button" data-modal-close>
+          <svg
+            class="modal-icon-close"
+            aria-label="icon-modal-close"
+            width="8"
+            height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
   <!-- Body ends here -->
 </html>
